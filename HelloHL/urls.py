@@ -6,7 +6,7 @@ from . import viewHtml
 from django.conf.urls import *
 from . import view,testdb
 
-from . import search
+from . import search,search2
 
 urlpatterns = [
     url(r'^$', view.hello),
@@ -17,4 +17,5 @@ urlpatterns = [
     url(r'^testdbDel$', testdb.testdbDel),
     url(r'^search-form$', search.search_form),
     url(r'^search$', search.search),
+    url(r'^search-post$', search2.search_post),
 ]
